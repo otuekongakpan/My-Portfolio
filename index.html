@@ -78,62 +78,33 @@
     </div>
   </section>
 
-  <section class="section" id="tools">
-    <h2>Tools</h2>
-    <div class="tools">
-      <!-- VS Code -->
-      <div class="tool-card">
-        <p>VS Code</p>
-        <button class="learn-btn">Learn More</button>
-        <div class="modal">
-          <div class="modal-content">
-            <button class="close-btn">&times;</button>
-            <h3>VS Code</h3>
-            <p>Visual Studio Code is a lightweight, powerful code editor with debugging, Git integration, and extensions for web development and software engineering projects.</p>
-          </div>
-        </div>
-      </div>
+  <div class="tools">
+  <div class="tool-card">
+    <p>VS Code</p>
+    <button class="learn-btn" data-tool="VS Code">Learn More</button>
+  </div>
+  <div class="tool-card">
+    <p>.NET / C#</p>
+    <button class="learn-btn" data-tool=".NET / C#">Learn More</button>
+  </div>
+  <div class="tool-card">
+    <p>GitHub</p>
+    <button class="learn-btn" data-tool="GitHub">Learn More</button>
+  </div>
+  <div class="tool-card">
+    <p>AWS Console</p>
+    <button class="learn-btn" data-tool="AWS Console">Learn More</button>
+  </div>
+</div>
 
-      <!-- .NET / C# -->
-      <div class="tool-card">
-        <p>.NET / C#</p>
-        <button class="learn-btn">Learn More</button>
-        <div class="modal">
-          <div class="modal-content">
-            <button class="close-btn">&times;</button>
-            <h3>.NET / C#</h3>
-            <p>.NET and C# provide a powerful framework for building desktop, web, and cloud applications. It supports modern programming paradigms and is widely used in enterprise solutions.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- GitHub -->
-      <div class="tool-card">
-        <p>GitHub</p>
-        <button class="learn-btn">Learn More</button>
-        <div class="modal">
-          <div class="modal-content">
-            <button class="close-btn">&times;</button>
-            <h3>GitHub</h3>
-            <p>GitHub is a platform for hosting and collaborating on Git repositories. It is essential for version control, collaborative coding, and sharing projects.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- AWS Management Console -->
-      <div class="tool-card">
-        <p>AWS Management Console</p>
-        <button class="learn-btn">Learn More</button>
-        <div class="modal">
-          <div class="modal-content">
-            <button class="close-btn">&times;</button>
-            <h3>AWS Management Console</h3>
-            <p>AWS Management Console allows developers to manage cloud resources, deploy applications, and monitor services in a scalable and secure environment.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Single Modal -->
+<div class="modal" id="toolModal">
+  <div class="modal-content">
+    <button class="close-btn">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
 
   <section class="section" id="projects">
     <h2>Projects</h2>
