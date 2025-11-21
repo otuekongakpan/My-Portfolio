@@ -11,3 +11,4 @@ const contactBtn = document.getElementById("btnMessage");
 contactBtn.addEventListener("click", () => {
   window.location.href = "mailto:otuakpan05@gmail.com";
 });
+
