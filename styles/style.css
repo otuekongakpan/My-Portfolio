@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f3f3;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(135deg, #1a1a1a, #292929);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+nav {
+  background: #222;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: white;
+}
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #00c4ff;
+}
+.section {
+  padding: 70px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+button {
+  padding: 12px 20px;
+  background: #00a8e8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #008ac1;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  margin-top: 40px;
+}
+/* ----------- RESPONSIVE NAVIGATION ----------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 1px solid #444;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .projects {
+    grid-template-columns: 1fr !important;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
