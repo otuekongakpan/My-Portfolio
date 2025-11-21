@@ -25,7 +25,6 @@
   <meta name="twitter:description" content="Explore the portfolio of Otuekong Akpan, a Software Engineer, Web & AI Enthusiast, and Cloud Specialist." />
   <meta name="twitter:image" content="https://otuekongakpan.github.io/wdd231/My-Portfolio/images/favicon.svg"/>
 
-
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/x-icon" />
 
@@ -78,33 +77,41 @@
     </div>
   </section>
 
-  <div class="tools">
-  <div class="tool-card">
-    <p>VS Code</p>
-    <button class="learn-btn" data-tool="VS Code">Learn More</button>
-  </div>
-  <div class="tool-card">
-    <p>.NET / C#</p>
-    <button class="learn-btn" data-tool=".NET / C#">Learn More</button>
-  </div>
-  <div class="tool-card">
-    <p>GitHub</p>
-    <button class="learn-btn" data-tool="GitHub">Learn More</button>
-  </div>
-  <div class="tool-card">
-    <p>AWS Console</p>
-    <button class="learn-btn" data-tool="AWS Console">Learn More</button>
-  </div>
-</div>
+  <!-- TOOLS SECTION WITH FIXED HEADER -->
+  <section class="section" id="tools">
+    <h2>Tools</h2>
 
-<!-- Single Modal -->
-<div class="modal" id="toolModal">
-  <div class="modal-content">
-    <button class="close-btn">&times;</button>
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
+    <div class="tools">
+      <div class="tool-card">
+        <p>VS Code</p>
+        <button class="learn-btn" data-tool="VS Code">Learn More</button>
+      </div>
+
+      <div class="tool-card">
+        <p>.NET / C#</p>
+        <button class="learn-btn" data-tool=".NET / C#">Learn More</button>
+      </div>
+
+      <div class="tool-card">
+        <p>GitHub</p>
+        <button class="learn-btn" data-tool="GitHub">Learn More</button>
+      </div>
+
+      <div class="tool-card">
+        <p>AWS Console</p>
+        <button class="learn-btn" data-tool="AWS Console">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Single Modal -->
+  <div class="modal" id="toolModal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
   </div>
-</div>
 
   <section class="section" id="projects">
     <h2>Projects</h2>
@@ -113,14 +120,14 @@
         <img src="images/chamber-preview.png" alt="Chamber Website Preview" class="project-img">
         <h3>Chamber Website</h3>
         <p>A responsive website built for the Chamber project, demonstrating design, layout, and UI interactions.</p>
-        <button onclick="window.open('https://otuekongakpan.github.io/wdd231/chamber/index.html', '_blank')">View Project</button>
+    <button onclick="window.open('https://otuekongakpan.github.io/wdd231/chamber/index.html', '_blank')">View Project</button>
       </div>
 
       <div class="project-card">
         <img src="images/chamber-preview.png" alt="Chamber Website Preview" class="project-img">
         <h3>Chamber Website</h3>
         <p>A responsive website built for the Chamber project, demonstrating design, layout, and UI interactions.</p>
-        <button onclick="window.open('https://otuekongakpan.github.io/wdd231/chamber/index.html', '_blank')">View Project</button>
+    <button onclick="window.open('https://otuekongakpan.github.io/wdd231/chamber/index.html', '_blank')">View Project</button>
       </div>
     </div>
   </section>
