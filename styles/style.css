@@ -2,30 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f3f3f3;
-  color: #333;
+  background: #F4F1DE;
+  color: #3D405B;
   line-height: 1.6;
 }
 header {
-  background: linear-gradient(135deg, #1a1a1a, #292929);
-  color: #fff;
+  background: #2E3A59;
+  color: #F4F1DE;
   padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: background 0.5s;
 }
 header h1 {
   font-size: 2.8rem;
   margin-bottom: 10px;
+  animation: fadeIn 1s ease-out;
+}
+header p {
+  animation: fadeIn 1.5s ease-out;
 }
 nav {
-  background: #222;
+  background: #2E3A59;
   padding: 15px;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-radius: 0 0 20px 20px;
 }
 .nav-container {
   max-width: 1100px;
@@ -35,28 +42,37 @@ nav {
   align-items: center;
 }
 .logo {
-  color: white;
+  color: #F4F1DE;
+  animation: slideIn 0.8s ease-out;
+  font-family: 'Poppins', sans-serif;
 }
 .hamburger {
   background: none;
   border: none;
-  color: white;
+  color: #F4F1DE;
   font-size: 28px;
   cursor: pointer;
   display: none;
+  transition: transform 0.3s;
+}
+.hamburger:hover {
+  transform: rotate(90deg);
 }
 .nav-links {
   display: flex;
   gap: 25px;
 }
 .nav-links a {
-  color: #fff;
+  color: #F4F1DE;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: color 0.3s;
+  border-radius: 8px;
+  padding: 5px 10px;
 }
 .nav-links a:hover {
-  color: #00c4ff;
+  color: #E07A5F;
+  background: rgba(224, 122, 95, 0.1);
 }
 .section {
   padding: 70px 20px;
@@ -67,68 +83,105 @@ nav {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
-  color: #222;
+  color: #2E3A59;
+  animation: fadeIn 1s ease-out;
 }
-.projects {
+.projects, .skills, .tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
-.project-card {
-  background: #fff;
+.project-card, .skill-card, .tool-card {
+  background: linear-gradient(145deg, #F4F1DE, #E07A5F20);
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.4s, box-shadow 0.4s, background 0.4s;
+  position: relative;
 }
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+.project-card:hover, .skill-card:hover, .tool-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(145deg, #E07A5F20, #81B29A20);
+}
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.project-img:hover {
+  transform: scale(1.05);
 }
 button {
   padding: 12px 20px;
-  background: #00a8e8;
+  background: #E07A5F;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 button:hover {
-  background: #008ac1;
+  background: #81B29A;
+  transform: scale(1.05);
 }
 footer {
   text-align: center;
-  padding: 20px;
-  background: #1a1a1a;
-  color: #fff;
+  padding: 30px 20px;
+  background: #2E3A59;
+  color: #F4F1DE;
+  border-radius: 30px 30px 0 0;
   margin-top: 40px;
 }
-/* ----------- RESPONSIVE NAVIGATION ----------- */
+.social-links {
+  margin-top: 10px;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #222;
+    background: #2E3A59;
     width: 100%;
     padding: 20px 0;
     margin-top: 15px;
     border-top: 1px solid #444;
   }
-
   .nav-links.active {
     display: flex;
   }
-
-  .projects {
+  .projects, .skills, .tools {
     grid-template-columns: 1fr !important;
   }
-
+  button {
+    display: block;
+    margin: 15px auto 0 auto;
+  }
+  #contact p {
+    text-align: center;
+  }
   header h1 {
     font-size: 2.2rem;
   }
