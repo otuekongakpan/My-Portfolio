@@ -73,7 +73,7 @@
       <div class="skill-card"><p>Version Control (Git/GitHub)</p></div>
       <div class="skill-card"><p>AWS Core: EC2, S3, Lambda, Beanstalk</p></div>
       <div class="skill-card"><p>AWS Infra: IAM, VPC, CloudWatch, Route 53, RDS</p></div>
-      <div class="skill-card"><p>Node.js & SQL (In Progress)</p></div>
+      <div class="skill-card"><p>Node.js & PostgreSQL</p></div>
     </div>
   </section>
 
@@ -101,7 +101,19 @@
         <p>AWS Console</p>
         <button class="learn-btn" data-tool="AWS Console">Learn More</button>
       </div>
+
+      <div class="tool-card">
+        <p>Node.js</p>
+        <button class="learn-btn" data-tool="Node.js">Learn More</button>
+      </div>
+
+      <div class="tool-card">
+        <p>pg Admin</p>
+        <button class="learn-btn" data-tool="pg Admin">Learn More</button>
+      </div>
     </div>
+
+
   </section>
 
   <!-- Single Modal -->
@@ -113,12 +125,13 @@
     </div>
   </div>
 
-  <section class="section" id="projects">
+<section class="section" id="projects">
     <h2>Projects</h2>
 
-    <!-- Web Projects -->
-    <h3 style="text-align:center; margin-bottom:15px; color:#2E3A59;">Web Development Projects</h3>
+    <!-- Web Development Projects -->
+    <h3 style="text-align:left; margin-bottom:16px; color:var(--text-main); font-size:1.1rem;">Web Development</h3>
     <div class="projects">
+      <!-- Chamber Website -->
       <div class="project-card">
         <img src="images/chamber-preview.png" alt="Chamber Website Preview" class="project-img">
         <h3>Chamber Website</h3>
@@ -126,16 +139,28 @@
         <button onclick="window.open('https://otuekongakpan.github.io/wdd231/chamber/index.html', '_blank')">View Project</button>
       </div>
 
+      <!-- Restaurant Website -->
       <div class="project-card">
         <img src="images/restaurant-review.jpeg" alt="Restaurant Website Preview" class="project-img">
         <h3>Restaurant Website</h3>
         <p>A responsive website built for the Restaurant project, demonstrating layout, design, and user interaction.</p>
         <button onclick="window.open('https://otuekongakpan.github.io/wdd231/final/index.html', '_blank')">View Project</button>
       </div>
+
+      <!-- AeroPulse Aviation Dashboard -->
+      <div class="project-card">
+        <img src="images/aeropulse-preview.png" alt="AeroPulse Aviation Dashboard Preview" class="project-img">
+        <h3>AeroPulse Dashboard</h3>
+        <p>An aviation intelligence SPA combining real-time flight telemetry, weather forecasts, packing lists, and risk scoring.</p>
+        <div style="display: flex; gap: 8px; margin-top: auto;">
+          <button onclick="window.open('https://aeropulse-xrm0.onrender.com/', '_blank')">Live App</button>
+          <button onclick="window.open('https://github.com/otuekongakpan/final-project/blob/master/src/index.html', '_blank')">GitHub</button>
+        </div>
+      </div>
     </div>
 
     <!-- Python Projects -->
-    <h3 style="text-align:center; margin:40px 0 15px; color:#2E3A59;">Python Projects</h3>
+    <h3 style="text-align:left; margin:40px 0 16px; color:var(--text-main); font-size:1.1rem;">Python</h3>
     <div class="projects">
       <div class="project-card">
         <img src="images/python.jpg" alt="Python Project Preview" class="project-img">

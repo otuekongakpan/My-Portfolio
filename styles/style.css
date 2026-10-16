@@ -124,7 +124,7 @@ nav {
 /* === GRIDS & MINIMAL CARDS === */
 .projects, .skills, .tools {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns for a balanced layout */
   gap: 16px;
 }
 

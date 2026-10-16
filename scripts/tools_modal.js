@@ -9,9 +9,10 @@ const toolDescriptions = {
   "VS Code": "Visual Studio Code is a lightweight yet powerful code editor that supports multiple programming languages, extensions, and debugging tools, making development efficient and versatile.",
   ".NET / C#": ".NET is a robust framework that allows developers to build cross-platform applications using C#. It provides a rich ecosystem for web, desktop, and cloud applications.",
   "GitHub": "GitHub is a web-based platform for version control using Git. It enables collaboration, code sharing, project management, and continuous integration for developers.",
-  "AWS Console": "The AWS Management Console is a web interface for managing Amazon Web Services resources, including EC2, S3, Lambda, IAM, and other cloud services, enabling deployment and monitoring of cloud applications."
+  "AWS Console": "The AWS Management Console is a web interface for managing Amazon Web Services resources, including EC2, S3, Lambda, IAM, and other cloud services, enabling deployment and monitoring of cloud applications.",
+  "Node.js": "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows developers to build scalable server-side applications using JavaScript, with a rich ecosystem of libraries and frameworks.",
+  "pg Admin": "pgAdmin is a popular open-source administration and development platform for PostgreSQL, providing a user-friendly interface for managing databases and executing SQL queries."
 };
-6
 
   // Open modal
   const learnBtns = document.querySelectorAll('.learn-btn');
